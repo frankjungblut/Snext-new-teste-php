@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Verifique a segurança do seu computador! A S NEXT Cibersegurança ajuda a identificar vulnerabilidades e oferece soluções para proteger a sua empresa.">
+    <meta name="description"
+        content="Verifique a segurança do seu computador! A S NEXT Cibersegurança ajuda a identificar vulnerabilidades e oferece soluções para proteger a sua empresa.">
     <link rel="shortcut icon" href="assets/imgs/snext.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media-querie.css">
     <link href="assets/vendors/themify-icons/css/themify-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>S NEXT Cibersegurança</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/menu-toggle.js"></script>
@@ -32,9 +34,13 @@
                             if (openPorts.length === 1) {
                                 additionalInfo += '<br><p class="text-primary">Preocupe-se ainda mais! Está pior que podes imaginar.</p>';
                             }
+                            // Alterar a cor de fundo para vermelho
+                            $('.text-content-right-div').css('background-color', 'rgba(255, 0, 0, 0.5)');
                         } else {
                             additionalInfo = '<br><h4 class="text-primary">Estando esta aba em verde é um bom começo!</h4>' +
                                 '<br><h5>A tua empresa é séria com os Clientes? <br> Porque não receber uma visita da nossa equipe mesmo assim?</h5>';
+                            // Alterar a cor de fundo para verde
+                            $('.text-content-right-div').css('background-color', 'rgba(144, 170, 69, 0.5)');
                         }
 
                         $('.header-title').html('<strong class="text-primary">' + statusMessage + '</strong>');
@@ -104,7 +110,8 @@
             <div class="text-content-right-div header-form">
                 <br>
                 <h5 class="text-primary">Estando esta aba em verde é um bom começo!</h5><br>
-                <p class="outlined">A tua empresa é séria com os Clientes? <br> Porque não receber uma visita da nossa equipe mesmo assim?</p>
+                <p class="outlined">A tua empresa é séria com os Clientes? <br> Porque não receber uma visita da nossa
+                    equipe mesmo assim?</p>
             </div>
         </div>
     </section>
@@ -116,12 +123,16 @@
                 </span>
             </p>
             <div class="social-links">
-                <a href="https://facebook.com/snextsmo" aria-label="facebook snext profile" target="_blank" class="link"><i class="ti-facebook"></i></a>
-                <a href="https://instagram.com/snextsmo" aria-label="instagram snext profile" target="_blank" class="link"><i class="ti-instagram"></i></a>
-                <a href="https://youtube.com/playlist?list=PLVpzouzmLNbSkq4TdGAYT0AQz6hCCcfZU" aria-label="youtube snext channel" target="_blank" class="link"><i class="ti-youtube"></i></a>
+                <a href="https://facebook.com/snextsmo" aria-label="facebook snext profile" target="_blank"
+                    class="link"><i class="ti-facebook"></i></a>
+                <a href="https://instagram.com/snextsmo" aria-label="instagram snext profile" target="_blank"
+                    class="link"><i class="ti-instagram"></i></a>
+                <a href="https://youtube.com/playlist?list=PLVpzouzmLNbSkq4TdGAYT0AQz6hCCcfZU"
+                    aria-label="youtube snext channel" target="_blank" class="link"><i class="ti-youtube"></i></a>
             </div>
             <div>
-                <p class="developed"> <a href="https://www.linkedin.com/in/frank-schwertz-jungblut" target="_blank">Desenvolvido por Frank S J</a></p>
+                <p class="developed"> <a href="https://www.linkedin.com/in/frank-schwertz-jungblut"
+                        target="_blank">Desenvolvido por Frank S J</a></p>
             </div>
         </div>
     </footer>
