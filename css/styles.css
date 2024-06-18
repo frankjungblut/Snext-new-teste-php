@@ -712,3 +712,76 @@ footer .developed{
     height: 32px; /* 2rem * 16 = 32px */
 }
 /*end contato styles*/
+
+/*PÁGINA DE VIDEOS*/
+
+#main-video {
+    width: 560px;
+    height: 315px;
+}
+
+.video-section {
+    position: fixed;
+    top: 19.8%; /* Ajuste conforme a altura do header */
+    bottom: 10%; /* Ajuste conforme a altura do footer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: calc(100vh - 19.8% - 10%); /* Calcula a altura disponível */
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: #00000075;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center; /* Adicionado para centralizar verticalmente */
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+}
+
+.video-player {
+    padding: 20px;
+}
+
+.video-list {
+    width: 200px;
+   
+    border-radius: 20px;
+    overflow-y: auto; /* Adiciona barra de rolagem vertical */
+    max-height: 350px; /* Altura fixa para a lista de vídeos */
+    color: #ffffff;
+}
+
+#video-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#video-list li {
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+#video-list li:hover {
+    background-color: #01101e;
+    border-radius: 40px;
+    transition: 1s;
+    color:  #ff9a44;
+}
+
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ff9b446c #ffffff00;  
+}
+
+/*END PÁGINA DE VIDEOS*/

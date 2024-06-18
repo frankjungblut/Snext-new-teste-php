@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Explore nosso Portfólio - Veja como nossos serviços de avaliação e reconfiguração de segurança de rede estão fortalecendo a proteção digital de nossos clientes. Descubra como podemos ajudar a proteger sua empresa contra ameaças cibernéticas. Torne-se nosso cliente hoje mesmo e garanta sua segurança online!">
+        content="Verifique a segurança do seu computador! A S NEXT Cibersegurança ajuda a identificar vulnerabilidades e oferece soluções para proteger a sua empresa.">
     <link rel="shortcut icon" href="assets/imgs/snext.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media-querie.css">
@@ -20,7 +20,11 @@
 
 <body>
     <div class="box-video">
-        <video src="assets/imgs/header.mp4" autoplay muted loop></video>
+        <video autoplay muted loop>
+            <!-- Source do vídeo -->
+            <source src="assets/imgs/header.mp4" type="video/mp4">
+            Seu navegador não suporta o vídeo.
+        </video>
     </div>
     <header>
         <img class="snext-logo" src="assets/imgs/logo-snext-resumido.png" alt="">
@@ -56,48 +60,31 @@
             <img class="snext-logo-mobile" src="assets/imgs/snext.png" alt="">
         </span>
     </button>
-    <section class="main-section" id="portfolio">
-        <div class="portfolio-div-center">
-            <div class="portfolio-div-left">
-                <div class="balloon" id="b1">
-                    <p>Trabalho de excelência, muito conhecimento e soluções práticas em consonância com a LGPD.</p>
-                </div>
+    <section class="video-section">
+        <div class="container">
+            <div class="video-player">
+                <iframe id="main-video" 
+                    src="https://www.youtube.com/embed/MIELo9cx2SY" frameborder="0"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
             </div>
-            <div class="portfolio-div-middle">
-                <div class="balloon" id="b2">
-                    <p>Fizemos um serviço de avaliação e reconfiguração de segurança de nossa rede, tendo obtidos
-                        excelentes resultados. As mudanças implementadas nos deram maior segurança em nossas transações
-                        via internet, além de aumentar nossa proteção contra ataques externos.
-                    </p>
-                </div>
-            </div>
-            <div class="portfolio-div-right">
-                <div class="balloon" id="b3">
-                    <p>...</p>
-                </div>
-            </div>
-        </div>
-        <div class="porfolio-div-footer">
-            <div class="portfolio-div-left-footer">
-                <img src="assets/imgs/papamultas-logo.jpg">
-                <div class="portfolio-footer-text">
-                    <h6>Papa Multas</h6>
-                    <p>Treinamento e adequação LGPD</p>
-                </div>
-            </div>
-            <div class="portfolio-div-middle-footer">
-                <img src="assets/imgs/avatar2.jpg">
-                <div class="portfolio-footer-text">
-                    <h6>Super Centenaro</h6>
-                    <p>Reestruturação do Servidor</p>
-                </div>
-            </div>
-            <div class="portfolio-div-right-footer">
-                <img src="assets/imgs/avatar1.jpg">
-                <div class="portfolio-footer-text">
-                    <h6>Seja Nosso Cliente</h6>
-                    <p>site.com.br</p>
-                </div>
+            <div class="video-list">
+                <ul id="video-list">
+                    <!-- Lista de vídeos -->
+                    <li data-video-id="MIELo9cx2SY">Cibersegurança e sua Importância!</li>
+                    <li data-video-id="ZMsQwbIbBsc">Normas ISO e Checklists de Controle</li>
+                    <li data-video-id="dfpDl6Pxldk">Identificando Valor de Informação</li>
+                    <li data-video-id="tHQA3Xv3k98">Latinoware 2022 - Aprendizados e Experiência!</li>
+                    <li data-video-id="ciIYhJSF7iI">LGPD e sua relação com a Cibersegurança</li>
+                    <li data-video-id="T_RVSUuuxDA">Verificando por Informações Vazadas</li>
+                    <li data-video-id="OuDwWefwuRY">Ativadores e Softwares Piratas</li>
+                    <li data-video-id="IxUwmAgNzi4">É difícil investir em cibersegurança? de quanto eu preciso?</li>
+                    <li data-video-id="BDjAOHWWENA">O Ransomware em Detalhes</li>
+                    <li data-video-id="CGNNoZBuPtg">O que é a tecnologia Li-Fi e como ela vai afetar a Cibersegurança?</li>
+                    <li data-video-id="iUIgTfRW7qQ">Inteligência Artificial & Phishing: Um Estudo de Caso</li>
+                    
+                    <!-- Adicione mais vídeos conforme necessário -->
+                </ul>
             </div>
         </div>
     </section>
@@ -117,7 +104,8 @@
                     aria-label="youtube snext channel" target="_blank" class="link"><i class="ti-youtube"></i></a>
             </div>
             <div>
-                <p class="developed"> <a href="https://www.linkedin.com/in/frank-schwertz-jungblut" target="_blank"> Desenvolvido por Frank S J</a></p>
+                <p class="developed"> <a href="https://www.linkedin.com/in/frank-schwertz-jungblut"
+                        target="_blank">Desenvolvido por Frank S J</a></p>
             </div>
         </div>
     </footer>
